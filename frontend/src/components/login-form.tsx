@@ -1,24 +1,23 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 interface LoginFormProps {
-  className?: string
-  title: string
-  description: string
-  buttonOne: string
-  buttonTwo: string
-  footer: string
-  footerButton: string
+  className?: string;
+  title: string;
+  description: string;
+  buttonOne: string;
+  buttonTwo: string;
+  footer: string;
+  footerButton: string;
 }
 
 /**
@@ -64,9 +63,7 @@ export function LoginForm({
       <Card>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
-          <CardDescription>
-            {description}
-          </CardDescription>
+          <CardDescription>{description}</CardDescription>
         </CardHeader>
         <CardContent>
           <form>
@@ -111,5 +108,5 @@ export function LoginForm({
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }
